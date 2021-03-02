@@ -11,19 +11,20 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <title>Portfolio Project</title>
+    <title>Andrew Nelson's Portfolio Project</title>
 </head>
 
 <body>
+    <!-- horizontal navigation bar with links to each of the pages -->
     <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand">Welcome to Hampton Roads!</a>
+        <a class="navbar-brand">Hampton Roads Travel</a>
         <div class="collapse navbar-collapse" id="main-navigation">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="home.html">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="restaurants_and_breweries.html">Restaurants and Breweries</a>
+                    <a class="nav-link" href="restaurants.html">Restaurants</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="area_attractions.html">Area Attractions</a>
@@ -34,12 +35,6 @@
             </ul>
         </div>
     </nav>
-
-    <!--
-    <header class="page-header header container-fluid" style="text-align: center;">
-        <h1>Welcome to Hampton Roads!</h1>
-    </header>
-    -->
 
     <!-- picture carousel -->
     <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="10000">
@@ -100,9 +95,10 @@
         </a>
     </div>
 
+    <!-- form that sbumits an email address for a "subscription". I couldn't get it to not reload. -->
     <footer class="text-center text-white" style="background-color: teal;">
         <div class="container p-5">
-            <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="POST">
+            <form id="subscribe" action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="POST">
                 <div class="row justify-content-center">
                     <div class="col-auto">
                         <p class="pt-2">
@@ -111,20 +107,18 @@
                     </div>
                     <div class="col-md-5">
                         <div class="form-outline form-white mb-4">
-                            <input type="email" id="form5Example2" class="form-control" placeholder="Email Address"/>
+                            <input type="email" class="form-control" placeholder="Email Address"/>
                         </div>
                     </div>
                     <div class="col-auto">
-                        <button type="submit" class="btn btn-outline-light">
-                            Subscribe
-                        </button>
+                        <button id="submit" type="submit" value="Subscribe" class="btn btn-outline-light">Subscribe</button>
                     </div>
                 </div>
             </form>
         </div>
     </footer>
 
-    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- jQuery and Bootstrap Bundle - Bootstrap dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous">
